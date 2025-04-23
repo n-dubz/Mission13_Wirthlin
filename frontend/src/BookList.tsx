@@ -299,7 +299,12 @@ const BookList = () => {
     <div style={styles.pageWrapper}>
       <div style={styles.mainContainer}>
         <div style={styles.header}>
-          <h1 className="h3 text-center mb-0">Book List</h1>
+          <div className="d-flex justify-content-between align-items-center mb-3">
+            <h1 className="h3 mb-0">Book List</h1>
+            <Link to="/adminbooks" className="btn btn-outline-primary btn-sm">
+              Manage Books
+            </Link>
+          </div>
         </div>
         
         <div style={styles.controlsContainer}>
